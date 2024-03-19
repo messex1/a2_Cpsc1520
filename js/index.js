@@ -8,3 +8,13 @@
   <td>NUMBER OF RATINGS HERE</td>
 </tr> 
 */
+fetch('public/data/albums.json')
+  .then(response => response.json())
+  .then(data => {
+    // Process the album data here
+    console.log(data);
+  })
+  .catch(error => {
+    // Handle any errors that occur during the fetch
+    console.error('Error:', error);
+  });
